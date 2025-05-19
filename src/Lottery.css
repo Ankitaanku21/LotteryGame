@@ -1,0 +1,61 @@
+.ticket{
+    border: 1px solid black;
+    border-radius: 14px;
+    background-color: #5a68a7;
+    color: black;
+}
+
+.lottery{
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 14px;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.ticket:hover {
+    font-size: 15px;
+    border-radius: 18px;
+    border: 2px solid black;
+    color: black;
+    background-color: rgb(119, 37, 88);
+    transition: 0.3s;
+}
+
+body {
+    background-image: url("C:\Users\hp\WEB-D\DELTA_REACT\react-state-class\src\assets\lottery.png");
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
+    height: 100vh;                  
+    margin: 0;   
+    color: black;                  
+}
+
+/* Celebration*/
+.ticket span {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+h3.win {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+h3:has(> span), h3:has(> strong) {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    color: #f0f;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #f0f;
+  }
+  to {
+    color: #0ff;
+    text-shadow: 0 0 20px #0ff, 0 0 30px #0f0;
+  }
+}
+
