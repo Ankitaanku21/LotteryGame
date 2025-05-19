@@ -59,24 +59,24 @@ export default function Lottery() {
         </div>
         <br />
 
-        {/* 🔢 Chances Remaining */}
+        {/* Chances Remaining */}
         <div style={{ marginBottom: "10px", fontWeight: "bold" }}>
           Chances Left: {chancesLeft}
         </div>
 
-        {/* 🎟️ Buy Ticket */}
+        {/* Buy Ticket */}
         <button className="ticket" onClick={buyTicket} disabled={isWinning || chancesLeft === 0}>
           Buy New Ticket
         </button>
         <br />
 
-        {/* 🎉 Win / ❌ Lose Message */}
+        {/* Win / Lose Message */}
         <h3 className={isWinning ? "win" : ""} style={{ color: !isWinning && chancesLeft === 0 ? "white" : "" }}>
           {isWinning && "🎉 Congratulations, you won!"}
           {chancesLeft === 0 && !isWinning && "😞 You lost! Try again."}
         </h3>
 
-        {/* 🔄 Restart Game */}
+        {/* Restart Game */}
         {(
           <button className="ticket" onClick={restartGame} style={{color: "black", backgroundColor: "#5a68a7;"}}>
             Restart Game
